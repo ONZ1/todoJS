@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,  initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <title></title>
     </head>
     <body>
         <header class="header">
@@ -17,16 +18,24 @@
             </div>
         </header>
         <section class="main">
-
+            <form class="login_form hidden">
+                <input type="text" placeholder="How can I call you?" required maxlength="15"/>
+                <button>Log in</button>
+            </form>
+            <h1 class="greeting hidden"></h1>
         </section>
         <section class="todo">
-
+            <button class="todo_header"></button>
+            <div class="todo_list"></div>
         </section>
         <section class="schedule">
-
+            <button class="schedule_header"></button>
+            <div class="schedule_list"></div>
         </section>
         <section class="calendar">
-
+            <button class="calender_header"></button>
+            <div class="calender_list"></div>
         </section>
+        <script src="JS/app.js"></script>
     </body>
 </html>
